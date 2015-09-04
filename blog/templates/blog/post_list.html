@@ -33,12 +33,16 @@
 </div>
 <div class="neighborhood-guides">
 <div class="container">
+<div class = "row">
 {% for post in blogposts %}
-  <div>
+
+  <div class="col-md-6">
     <p>published: {{ post.published_date }}</p>
     <h1><a href = ""> {{ post.title }}</a></p></h1>
     <p>{{ post.text | linebreaks }}</p>
+  </div>
 {% endfor %}
+</div>
 <div class="row">
 <div class="col-md-4">
 <div class="thumbnail">
